@@ -10,6 +10,8 @@
 		93D9DED21FE9DB52003B0A66 /* RRuleParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D9DEC81FE9DB52003B0A66 /* RRuleParser.framework */; };
 		93D9DED71FE9DB52003B0A66 /* RRuleParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9DED61FE9DB52003B0A66 /* RRuleParserTests.swift */; };
 		93D9DED91FE9DB52003B0A66 /* RRuleParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 93D9DECB1FE9DB52003B0A66 /* RRuleParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93D9DEE31FEA57AA003B0A66 /* RRuleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9DEE21FEA57AA003B0A66 /* RRuleParser.swift */; };
+		93D9DEE41FEA57AA003B0A66 /* RRuleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D9DEE21FEA57AA003B0A66 /* RRuleParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		93D9DED11FE9DB52003B0A66 /* RRuleParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRuleParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D9DED61FE9DB52003B0A66 /* RRuleParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRuleParserTests.swift; sourceTree = "<group>"; };
 		93D9DED81FE9DB52003B0A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93D9DEE21FEA57AA003B0A66 /* RRuleParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRuleParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				93D9DECB1FE9DB52003B0A66 /* RRuleParser.h */,
+				93D9DEE21FEA57AA003B0A66 /* RRuleParser.swift */,
 				93D9DECC1FE9DB52003B0A66 /* Info.plist */,
 			);
 			path = RRuleParser;
@@ -148,6 +152,7 @@
 				TargetAttributes = {
 					93D9DEC71FE9DB52003B0A66 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					93D9DED01FE9DB52003B0A66 = {
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D9DEE31FEA57AA003B0A66 /* RRuleParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93D9DED71FE9DB52003B0A66 /* RRuleParserTests.swift in Sources */,
+				93D9DEE41FEA57AA003B0A66 /* RRuleParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +330,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -334,6 +342,7 @@
 		93D9DEDD1FE9DB52003B0A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -343,10 +352,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RRuleParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminpust.RRuleParser;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +366,7 @@
 		93D9DEDE1FE9DB52003B0A66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -364,6 +376,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RRuleParser/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.benjaminpust.RRuleParser;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -376,6 +389,7 @@
 		93D9DEE01FE9DB52003B0A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SQ44YK5BM;
 				INFOPLIST_FILE = RRuleParserTests/Info.plist;
@@ -390,6 +404,7 @@
 		93D9DEE11FE9DB52003B0A66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SQ44YK5BM;
 				INFOPLIST_FILE = RRuleParserTests/Info.plist;
