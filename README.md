@@ -1,4 +1,4 @@
-#Swift RRULE Generator
+# Swift RRULE Generator
 ## Work in progress
 
 This is still unfinished.
